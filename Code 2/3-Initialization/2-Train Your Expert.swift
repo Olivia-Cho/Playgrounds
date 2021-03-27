@@ -33,7 +33,7 @@ crossTheLineAndCollectGem()
 
 
 
-//This is the completed code
+//This is the completed version
 
 func moveForward2Times() {
     for i in 1 ... 2{
