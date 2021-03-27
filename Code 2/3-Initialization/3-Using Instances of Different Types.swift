@@ -1,6 +1,7 @@
 let expert = Expert()
 let character = Character()
 
+
 expert.moveForward()
 expert.turnLockUp()
 
