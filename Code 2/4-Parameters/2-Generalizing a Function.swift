@@ -10,7 +10,7 @@ func turnLock(up: Bool, numberOfTimes : Int) {
     character.turnLeft()
     character.turnLeft()
 }
-func ExpertturnAround(){
+func ExpertTurnAround(){
     expert.turnRight()
     expert.turnRight()
 }
@@ -19,26 +19,34 @@ func step3Times() {
         character.moveForward()
     }
 }
+func turnTheLockDown2times() {
+    for i in 1 ... 2 {
+        expert.turnLockDown()
+    }
+}
+func CharacterCollectGemAndTurnAround() {
+    character.collectGem()
+    CharacterturnAround()
+}
 
 turnLock(up: true, numberOfTimes: 3)
-ExpertturnAround()
+ExpertTurnAround()
 turnLock(up: true, numberOfTimes: 3)
 step3Times()
+CharacterCollectGemAndTurnAround()
+for i in 1 ... 2 {
+    character.moveForward()
+    character.turnLeft()
+}
+turnTheLockDown2times()
+ExpertTurnAround()
+turnTheLockDown2times()
+character.moveForward()
+CharacterCollectGemAndTurnAround()
+character.moveForward()
+character.moveForward()
+ExpertTurnAround()
+expert.turnLockDown()
+character.moveForward()
 character.collectGem()
-CharacterturnAround()
-character.moveForward()
-character.turnLeft()
-character.moveForward()
-character.turnLeft()
-expert.turnLockDown()
-expert.turnLockDown()
-ExpertturnAround()
-expert.turnLockDown()
-expert.turnLockDown()
-character.moveForward()
-character.collectGem()
-CharacterturnAround()
-character.moveForward()
-character.moveForward()
-ExpertturnAround()
-expert.turnLockDown()
+    // I was on making Blue go collect the last gem
