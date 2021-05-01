@@ -1,7 +1,43 @@
-expert = Expert()
-character = Character()
-/* Expert needs to activate all the locks, so they can lift up the platforms and character can cross to collect the gems.
- Note: A gem is always next to a platform.
- Then Character needs to walk and collect gems while expert turns the platforms up.
- Note: there is a pattern where Character needs to go on the platform, go back down, then collect the gem. Next go back up moveforward and collect the gem, turn left and repeat.
- */
+func collectAgemAtTheBottem() {
+    character.moveForward()
+    expert.turnLockDown()
+    expert.turnLockDown()
+    expert.turnLockDown()
+}
+func go3steps() {
+    for i in 1 ... 3 {
+        character.moveForward()
+    }
+}
+func CharacterturnAround() {
+    character.turnRight()
+    character.turnRight()
+}
+
+character.move(distance: 2)
+character.collectGem()
+CharacterturnAround()
+character.move(distance: 2)
+character.turnRight()
+go3steps()
+character.moveForward()
+character.turnLeft()
+character.move(distance: 2)
+character.turnLeft()
+go3steps()
+character.moveForward()
+expert.turnLeft()
+expert.turnLock(up: true, numberOfTimes: 4)
+character.move(distance: 2)
+character.collectGem()
+CharacterturnAround()
+character.moveForward()
+expert.turnLockDown()
+expert.turnLockDown()
+expert.turnLockDown()
+character.turnLeft()
+character.moveForward()
+character.collectGem()
+CharacterturnAround()
+character.move(distance: 2)
+
