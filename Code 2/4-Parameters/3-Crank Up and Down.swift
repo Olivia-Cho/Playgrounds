@@ -1,9 +1,4 @@
-func collectAgemAtTheBottem() {
-    character.moveForward()
-    expert.turnLockDown()
-    expert.turnLockDown()
-    expert.turnLockDown()
-}
+
 func go3steps() {
     for i in 1 ... 3 {
         character.moveForward()
@@ -12,6 +7,17 @@ func go3steps() {
 func CharacterturnAround() {
     character.turnRight()
     character.turnRight()
+}
+func collectTheGemAtTheBottem() {
+    expert.turnLockUp()
+    character.turnRight()
+    character.moveForward()
+    character.moveForward()
+    character.collectGem()
+}
+func moveForward2Times() {
+    character.moveForward()
+    character.moveForward()
 }
 
 character.move(distance: 2)
@@ -32,12 +38,37 @@ character.move(distance: 2)
 character.collectGem()
 CharacterturnAround()
 character.moveForward()
-expert.turnLockDown()
-expert.turnLockDown()
-expert.turnLockDown()
+for i in 1 ... 3 {
+    expert.turnLockDown()
+}
 character.turnLeft()
 character.moveForward()
 character.collectGem()
 CharacterturnAround()
 character.move(distance: 2)
-
+expert.turnLeft()
+collectTheGemAtTheBottem()
+CharacterturnAround()
+character.move(distance: 2)
+character.turnRight()
+character.move(distance: 2)
+character.turnRight()
+expert.turnLeft()
+expert.turnLockUp()
+character.move(distance: 2)
+character.collectGem()
+CharacterturnAround()
+character.move(distance: 2)
+character.turnRight()
+expert.turnLeft()
+expert.turnLockUp()
+character.move(distance: 2)
+character.collectGem()
+CharacterturnAround()
+character.moveForward()
+expert.turnLockUp()
+expert.turnLockUp()
+expert.turnLockUp()
+character.turnLeft()
+character.moveForward()
+character.collectGem()
