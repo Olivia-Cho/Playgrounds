@@ -1,4 +1,3 @@
-
 func go3steps() {
     for i in 1 ... 3 {
         character.moveForward()
