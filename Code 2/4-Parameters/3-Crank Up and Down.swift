@@ -19,6 +19,7 @@ func moveForward2Times() {
     character.moveForward()
 }
 
+
 character.move(distance: 2)
 character.collectGem()
 CharacterturnAround()
