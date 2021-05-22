@@ -23,6 +23,9 @@ expertAtBottom.turnRight()
 expertAtBottomMove3times()
 expertAtBottom.turnLock(up: false, numberOfTimes: 2)
 expertAtTop.turnRight()
+if expertAtTop.isOnGem{
+    expertAtTop.collectGem()
+}
 expertAtTheTopMoveandCollect()
 
 func expertAtTheTopMoveandCollect() {
